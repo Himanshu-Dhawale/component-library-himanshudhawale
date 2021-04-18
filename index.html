@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Himanshu Dhawale | Home </title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1>Welome to himanshudhawale's component library</h1>
     <p>I'm attending neog.camp and I want to make a library which would make
         all my projects look good and consistent.</p>
-    
-    <hr >
+
+    <hr>
 
     <h2>@typography</h2>
 
@@ -19,106 +22,120 @@
     <h2>This is the second biggest heading</h2>
     <p>This is a normal paragraph. This is free flowing and will wrap around at
         the end like a paragraph</p>
-        <small>This is relatively smaller text</small>
+    <p>This pararaph will have <strong>Bold</strong> text.</p>
+    <small>This is relatively smaller text</small>
 
-        <hr >
+    <hr>
 
-        <h2>@container</h2>
+    <h2>@container</h2>
 
-        <h3>fluid container</h3>
-        <div>This is a fluid container and it will go and fill the end of the page</div>
+    <h3>fluid container</h3>
+    <div class="container container-fluid">This is a fluid container and it will go and fill the end of the page</div>
 
-        <h3>center container</h3>
-        <div>This is a centered container and it will go till the specified width</div>
-        <hr>
+    <h3>center container</h3>
+    <div class="container container-center">This is a centered container and it will go till the specified width</div>
+    <hr>
 
-        <h2>@links</h2>
-        <a href="/">primary link</a>
-        <a href="/">secondary link</a>
-        
-        <hr>
+    <h2>@links</h2>
+    <a class="primary-link" href="/">primary link</a>
+    <a class="secondary-link" href="/">secondary link</a>
 
-        <h2>@lists</h2>
+    <hr>
 
-        <h3>unordered list</h3>
-        <ul>
-            <li>Item One</li>
-            <li>Item Two</li>
-            <li>Item Three</li>
+    <h2>@lists</h2>
+
+    <h3>unordered list</h3>
+    <ul class="list-non-bullet">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+    </ul>
+
+    <h3>unordered inline list</h3>
+    <ul class="list-non-bullet">
+        <li class="list-item-inline">Inline Item One</li>
+        <li class="list-item-inline">Inline Item Two</li>
+        <li class="list-item-inline">Inline Item Three</li>
+    </ul>
+
+    <h3>reversed ordered list</h3>
+
+    <ol>
+        <li>milk</li>
+        <li>eggs</li>
+        <li>bread</li>
+    </ol>
+
+    <hr>
+
+    <h2>@nav</h2>
+    <nav class="navigation">
+        <div class="nav-brand">IAmBrand</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">Home</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link" href="/">Projects</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link" href="/">Blogs</a>
+            </li>
+
+
         </ul>
 
-        <h3>unordered inline list</h3>
-        <ul>
-            <li>Inline Item One</li>
-            <li>Inline Item Two</li>
-            <li>Inline Item Three</li>
-        </ul>
+    </nav>
+    <hr>
 
-        <h3>reversed ordered list</h3>
+    <h2>@header</h2>
 
-        <ol>
-            <li>milk</li>
-            <li>eggs</li>
-            <li>bread</li>
-        </ol>
+    <header class="hero">
+        <img class="hero-img" src="images/an image.svg" alt="hero">
+        <h1 class="hero-heading">Adarsh Balak The <span class="heading-inverted">Web Developer</span></h1>
+    </header>
 
-        <hr>
+    <hr>
 
-        <h2>@nav</h2>
-        <nav>
-            <div>IAmBrand</div>
-            <ul>
-                <li> 
-                    <a href="/">Home</a> 
-                </li>
-
-                <li>
-                    <a href="/">Projects</a>
-                </li>
-
-                <li>
-                    <a href="/">Blogs</a>
-                </li>
+    <h2>@section</h2>
+    <section class="section">
+        <div class="container container-center">
+            <h1>white section</h1>
+            <p>This will have white background</p>
+        </div>
 
 
-            </ul>
-            
-        </nav>
-        <hr>
-
-        <h2>@header</h2>
-
-        <header>
-            <img src="images/an image.svg" alt="hero">
-            <h1>heading inside hero</h1>
-        </header>
-
-        <hr>
-
-        <h2>@section</h2>
-        <section>
-            
-            <h3>white section</h3>
-            <p>This will have white background</p>    
     </section>
 
-    <section>
-        <h3>off white setion</h3>
-        <p>This will have grey background</p>
+    <section class="section ow">
+        <div class="container container-center">
+            <h1>off white setion</h1>
+            <p>This will have grey background</p>
+        </div>
+
     </section>
 
     <hr>
 
     <h2>@footer</h2>
-    <footer>
-        <div>Some small heading inside footer</div>
-        <ul>
-            <li>SocialOne</li>
-            <li>SocialTwo</li>
-            <li>SocialThree</li>
+    <footer class="footer">
+        <div class="footer-header">Some small heading inside footer</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="links" href="/">SocialOne</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="links" href="/">SocialTwo</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="links" href="/">SocialThree</a>
+            </li>
         </ul>
     </footer>
-       
-    
+
+
 </body>
+
 </html>
